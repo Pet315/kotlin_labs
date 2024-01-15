@@ -57,15 +57,14 @@ fun inputValues(lastValue: String): List<Double> {
 }
 
 fun main() {
+    println("1. Обчисліть значення функції та виведіть його на екран:")
     val task1 = inputValues("x")
     val (a1, b1, c1, d1, x) = task1
-
-    println("1. Обчисліть значення функції та виведіть його на екран:")
     println(MAX(a1, b1, c1, d1))
     println(powFour(x))
     println(squareEq(a1, b1, c1, x))
 
-    println("\n2. Розв'яжіть рівняння та виведіть на екран результат")
+    println("2. Розв'яжіть рівняння та виведіть на екран результат")
     val task2 = inputValues("y")
     val (a2, b2, c2, d2, y) = task2
     val res = eq1(y)
